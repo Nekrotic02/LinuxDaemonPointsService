@@ -1,0 +1,8 @@
+/home/nekrotic/Documents/pointdaemon/build/CMakeFiles/pointservicelinux.dir
+/home/nekrotic/Documents/pointdaemon/build/CMakeFiles/uninstall.dir
+/home/nekrotic/Documents/pointdaemon/build/CMakeFiles/edit_cache.dir
+/home/nekrotic/Documents/pointdaemon/build/CMakeFiles/rebuild_cache.dir
+/home/nekrotic/Documents/pointdaemon/build/CMakeFiles/list_install_components.dir
+/home/nekrotic/Documents/pointdaemon/build/CMakeFiles/install.dir
+/home/nekrotic/Documents/pointdaemon/build/CMakeFiles/install/local.dir
+/home/nekrotic/Documents/pointdaemon/build/CMakeFiles/install/strip.dir

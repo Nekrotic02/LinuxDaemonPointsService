@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/pointservicelinux.dir/pointservicelinux.cpp.o -o CMakeFiles/CMakeRelink.dir/pointservicelinux  /usr/lib/x86_64-linux-gnu/libcurl.so 

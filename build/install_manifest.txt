@@ -1,0 +1,3 @@
+/etc/pointservicelinux/pointservicelinux.conf
+/etc/systemd/system/pointservicelinux.service
+/usr/bin/pointservicelinux

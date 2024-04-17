@@ -1,0 +1,16 @@
+# Properties docs: https://www.freedesktop.org/software/systemd/man/systemd.service.html
+[Unit]
+Description=Point Daemon in Linux for KoTF
+After=network.target
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/pointservicelinux --config /etc/pointservicelinux/pointservicelinux.conf
+ExecReload=/bin/kill -s SIGHUP $MAINPID
+ExecStop=/bin/kill -s SIGTERM $MAINPID
+User=root
+StandardError=syslog
+SyslogIdentifier=pointservicelinux
+
+[Install]
+WantedBy=multi-user.target

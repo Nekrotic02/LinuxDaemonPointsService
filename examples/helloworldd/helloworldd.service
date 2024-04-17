@@ -1,0 +1,16 @@
+# Properties docs: https://www.freedesktop.org/software/systemd/man/systemd.service.html
+[Unit]
+Description=Daemon that logs Hello, World every minute, forever!
+After=network.target
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/helloworldd --config /etc/helloworldd/helloworldd.conf
+ExecReload=/bin/kill -s SIGHUP $MAINPID
+ExecStop=/bin/kill -s SIGTERM $MAINPID
+User=root
+StandardError=syslog
+SyslogIdentifier=helloworldd
+
+[Install]
+WantedBy=multi-user.target

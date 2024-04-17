@@ -1,0 +1,16 @@
+# Properties docs: https://www.freedesktop.org/software/systemd/man/systemd.service.html
+[Unit]
+Description=Daemon that monitors CPU temperature each second
+After=network.target
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/temperatured --config /etc/temperatured/temperatured.conf
+ExecReload=/bin/kill -s SIGHUP $MAINPID
+ExecStop=/bin/kill -s SIGTERM $MAINPID
+User=root
+StandardError=syslog
+SyslogIdentifier=temperatured
+
+[Install]
+WantedBy=multi-user.target
